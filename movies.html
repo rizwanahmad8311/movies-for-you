@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies For You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <div id="header">
+        <div id="searching">
+            <label for="search">Title:</label>
+            <input type="search" id="title" placeholder="Enter Movie Title " autofocus>
+            <input type="submit" id="inputbtn" onclick="searchResult()" value="Search">
+            <label for="search">Filter:</label>
+            <input type="text" id="year" placeholder="Enter Year to Filter" onchange="yearFilter()">
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Movies Start -->
+    <section id="work">
+        <div id="heading">
+            <center>
+                <h1>Today's Movies For You</h1>
+            </center>
+        </div>
+        <div id="movies">
+
+        </div>
+    </section>
+    <!-- Movies End -->
+
+
+    <!-- Footer Start  -->
+    <footer>
+        <p>
+            This is a clone of Movies. All the Movies and details
+            given are real.
+        </p>
+        <p>
+            &copy; Movies For You 2023.
+        </p>
+    </footer>
+    <!-- Footer End -->
+
+
+</body>
+
+
+</html>

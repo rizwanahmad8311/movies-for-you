@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Start */
+#header {
+    width: auto;
+    height: auto;
+    background: #0084ff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#header input {
+    padding: 5px;
+    margin: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+
+}
+
+#searching {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search {
+    border: 2%;
+}
+
+#inputbtn:hover {
+    cursor: pointer;
+    background-color: #5fb1ff;
+    color: #000;
+}
+
+#sitetitle {
+    display: flex;
+    /* align-content: center; */
+}
+
+#sitetitle:hover {
+    cursor: pointer;
+
+}
+
+/* Header End  */
+
+
+/* Work Start  */
+#work {
+    background-color: #004d29;
+    height: auto;
+    width: auto;
+    margin-bottom: -50px;
+
+}
+
+#heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#heading h1 {
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+
+}
+
+.movie-card {
+    margin: 10px 20px;
+    background-color: #3f3939;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.movie-card:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.movie-title {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-year {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+
+
+@media (max-width: 30.625em) {
+    #work {
+        padding: 6rem 1rem;
+    }
+
+    #movies {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Start  */
+footer {
+    background-color: #3f3939;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    color: #fff;
+    height: auto;
+    width: auto;
+    border-top: 2px solid red;
+
+}
+
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Footer End  */
